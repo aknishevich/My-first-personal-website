@@ -20,6 +20,7 @@ li{
 	top: 10vmin;
 	width: 10vmin;
 	height: 10vmin;
+	font-size: 0px;
 }
 #lang ul li img{
 	width: 8vmin;
