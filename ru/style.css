@@ -1,0 +1,257 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Lobster', cursive;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	color: #b3e6f9;
+}
+li{
+	list-style: none;
+}
+#lang{
+	z-index: 1000;
+	position: fixed;
+	right: 5vmin;
+	top: 10vmin;
+	width: 10vmin;
+	height: 10vmin;
+}
+#lang ul li img{
+	width: 8vmin;
+	height: 5vmin;
+}
+#lang ul li:hover > .ru{
+	display: block;
+}
+.eng a{
+	visibility: hidden;
+}
+#lang:hover > ul .eng a{
+	visibility: visible;
+}
+.container{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(img/bg.jpg);
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: cover; /* Современные браузеры */	
+}
+#menu{
+	position: fixed;
+	top: 0px;
+	width: 100vw;
+	z-index: 100;
+}
+#menu ul{
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#menu ul li{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 5vmin;
+}
+#menu ul li:hover{
+	color: #b3e6f9;
+	cursor: pointer;
+}
+.left{
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	float: left;
+	width: 40vw;
+	height: 100%;
+}
+.photo{
+	position: relative;
+	top: 20%;
+	left: 10vmax;
+	float: left;
+	width: 35vmin;
+	height: 55vmin;
+	background-image: url(img/photo.png);
+	-webkit-background-size: 100%;
+}
+.text{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 8vmin;
+	float: right;
+	height: 100%;
+	width: 60vw;
+	color: white;
+}
+.hello{
+	position: relative;
+	left: 0px;
+	float: left;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.text p{
+	position: relative;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+}
+.center{
+	width: 85vw;
+	background-color: rgba(0,0,0,0.6);
+	padding-top: 5vmin;
+	padding-bottom: 7vmin;
+	border-radius: 10vmin;
+	padding-left: 5vmin;
+	padding-right: 5vmin;
+	position: relative;
+	text-indent: 3vmin;
+	text-align: left;
+	color: #fff;
+	margin: 0 auto;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.center p{
+	padding-top: 2vmin;
+	font-family: 'Merriweather', serif;
+	font-size: 4.5vmin;
+	font-weight: 600;
+}
+.portfolio{
+}
+.portfolio ul{
+	text-align: center;
+	padding-top: 5vmin;
+	margin-left: -5vmin;
+}
+.portfolio ul li{
+	display: inline-block;
+	padding-left: 5vmin;
+}
+
+.pblock{
+	position: relative;
+	display: block;
+	width: 45vmin;
+	height: 35vmin;	
+	border-radius: 2vmin;
+	overflow: hidden;
+}
+.pblock:hover > .shadow{
+	display: flex;
+}
+.pblock img{
+	width: 45vmin;
+	height: 35vmin;	
+}
+.shadow{
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+	width: 45vmin;
+	height: 35vmin;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.open{
+	position: relative;
+	border-radius: 2vmin;
+	background-color: rgba(179, 230, 249, 0.8);
+	margin-left: 35%;
+	width: 15vmin;
+	height: 6vmin;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.open:hover{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.open a{
+	padding-top: 8%;
+	font-size: 3vmin;
+	height: 100%;
+	line-height: 100%;
+}
+.contacts{
+	background-color: rgba(0,0,0,0.6);
+	padding-top: 5vmin;
+	padding-bottom: 7vmin;
+	border-radius: 10vmin;
+	padding-left: 5vmin;
+	padding-right: 5vmin;
+	position: relative;
+	text-indent: 3vmin;
+	text-align: left;
+	color: #fff;
+	margin: 0 auto;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contacts p{
+	padding-top: 2vmin;
+	font-family: 'Merriweather', serif;
+	font-size: 4.5vmin;
+	font-weight: 600;
+}
+.contacts a{
+	margin-left: 25%;
+	padding-top: 2vmin;
+	font-family: 'Merriweather', serif;
+	font-size: 4.5vmin;
+	font-weight: 600;
+	line-height: 100%;
+}
+.contacts a img{
+	width: 7vmin;
+	height: 7vmin;
+	vertical-align: middle;
+}
+@media screen and (orientation:portrait) {
+.left{
+	width: 100vw;
+	height: 50vh;
+}
+.photo{
+	bottom: -200px;
+	left: 30%;
+}
+.text{
+	width: 100vw;
+	height: 50vh;
+}
+.hello{
+	position: absolute;
+	top: 0px;
+}
+.text p{
+	left: 20%;
+}
+}
