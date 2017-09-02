@@ -38,7 +38,7 @@ li{
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	background-image: url(img/bg.jpg);
+	background-image: url(../img/bg.jpg);
 	-moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
@@ -86,7 +86,7 @@ li{
 	float: left;
 	width: 35vmin;
 	height: 55vmin;
-	background-image: url(img/photo.png);
+	background-image: url(../img/photo.png);
 	-webkit-background-size: 100%;
 }
 .text{
